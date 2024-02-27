@@ -1,2 +1,3 @@
 # bookbot
-boot.dev guided project 
+Bookbot, my first git project. 
+Nothing special but first time 'out in the wilds'
