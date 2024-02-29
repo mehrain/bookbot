@@ -6,7 +6,7 @@ def main():
     letters_listed = letter_lister(letters_counted)
     print(f"{num_words} words found in the document")
     #print(f"The following letters where counted {letters_counted}")
-    print(letters_listed)
+    print("\n".join(letters_listed))
 
      
 
@@ -35,12 +35,13 @@ def letter_counter(text):
     return letter_dict
 
 def letter_lister(letters_counted):
-    for key, value in letters_counted:
+    letter_string = [] 
+    for key, value in letters_counted.items():
         if key.isalpha() == True: 
-            return f"the letter '{key}' is displayed {value} times."
+            letter_string.append(f"the letter '{key}' is counted {value} times.")
         else: 
-            raise Exception('This is not a letter.')
-            
+            pass
+    return letter_string
 
 
     
