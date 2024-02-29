@@ -3,11 +3,12 @@ def main():
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     letters_counted = letter_counter(text)
+    letters_listed = letter_lister(letters_counted)
     print(f"{num_words} words found in the document")
-    print(f"The following letters where counted {letters_counted}")
+    #print(f"The following letters where counted {letters_counted}")
+    print(letters_listed)
 
      
-# hello ed
 
 
 def get_num_words(text):
@@ -32,6 +33,17 @@ def letter_counter(text):
         else: 
             letter_dict[letter] = 1
     return letter_dict
+
+def letter_lister(letters_counted):
+    for key, value in letters_counted:
+        if key.isalpha() == True: 
+            return f"the letter '{key}' is displayed {value} times."
+        else: 
+            raise Exception('This is not a letter.')
+            
+
+
+    
         
 
 main()
