@@ -41,6 +41,7 @@ def letter_lister(letters_counted):
             letter_string.append(f"the letter '{key}' is counted {value} times.")
         else: 
             pass
+    letter_string.sort()
     return letter_string
 
 
