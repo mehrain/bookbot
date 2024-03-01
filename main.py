@@ -21,8 +21,8 @@ def get_book_text(path):
 
 
 def letter_counter(text):
-    words = text.split()
-    text = ''.join(words)
+    #words = text.split()
+    #text = ''.join(words)
     lower_text = text.lower()
     letter_dict = {}
 
