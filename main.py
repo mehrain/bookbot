@@ -21,11 +21,8 @@ def get_book_text(path):
 
 
 def letter_counter(text):
-    #words = text.split()
-    #text = ''.join(words)
     lower_text = text.lower()
     letter_dict = {}
-
     for letter in lower_text:
         if letter in letter_dict: 
             letter_dict[letter] += 1
@@ -38,8 +35,6 @@ def letter_lister(letters_counted):
     for key, value in letters_counted.items():
         if key.isalpha() == True: 
             letter_string.append(f"the letter '{key}' is counted {value} times.")
-        else: 
-            pass
     letter_string.sort()
     return letter_string
 
