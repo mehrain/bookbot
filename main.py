@@ -5,7 +5,6 @@ def main():
     letters_counted = letter_counter(text)
     letters_listed = letter_lister(letters_counted)
     print(f"{num_words} words found in the document")
-    #print(f"The following letters where counted {letters_counted}")
     print("\n".join(letters_listed))
 
      
